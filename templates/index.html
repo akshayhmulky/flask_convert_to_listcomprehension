@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Converter</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        background-color: burlywood;
+      }
+      .left {
+        width: 50%;
+        height: 400px;
+        background-color: rgb(252, 250, 248);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .right {
+        width: 50%;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(252, 250, 248);
+      }
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        margin-top: 20px;
+        display: flex;
+      }
+      form {
+        padding: 0;
+        margin: 0;
+      }
+      #input_func,
+      form {
+        height: 92%;
+        width: 92%;
+        resize: none;
+        background-color: rgb(252, 250, 248);
+      }
+
+      #output_func {
+        height: 90%;
+        width: 90%;
+        resize: none;
+        background-color: rgb(252, 250, 248);
+      }
+
+      input[type='submit'] {
+        width: 100px;
+        height: 35px;
+        text-align: center;
+        font-weight: bolder;
+        font-size: 20px;
+        border: none;
+        border-radius: 10px;
+        background-color: darkslategray;
+        color: white;
+        margin-top: 15px;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .titleTxt {
+        text-align: center;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="titleTxt">Convert to list comprehension</h1>
+    <div class="container">
+      <div class="left">
+        <form action="" method="POST">
+          <textarea name="input_func" id="input_func">{{ctx}}</textarea>
+          <input type="submit" value="Convert" />
+        </form>
+      </div>
+      <div class="right">
+        <textarea name="output_func" id="output_func">{{context}}</textarea>
+      </div>
+    </div>
+  </body>
+</html>
