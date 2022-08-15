@@ -51,11 +51,11 @@ def hello():
         return render_template('index.html')
 
 
-def test():
-    for color in colors:
-        if color == 'red':
-            new_colors.append(color)
+# def test():
+#     for color in colors:
+#         if color == 'red':
+#             new_colors.append(color)
 
 
-if __name__ == '__main__':
-    app.run(debug=False)
+# if __name__ == '__main__':
+#     app.run(debug=False)
