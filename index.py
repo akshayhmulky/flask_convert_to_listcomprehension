@@ -16,6 +16,8 @@ def convert_to_listcomprehension(outStr):
         dump.append(ot)
         if('.append' in ot):
             result = f'{ot.split(".")[0]}'
+        elif('.append' not in ot) and result=="":
+            result = "output"    
         elif(ot.startswith('for')):
             first = ot.split(' ')[1]
             fetchListName = (ot.split(' ')[3])[:-1]
